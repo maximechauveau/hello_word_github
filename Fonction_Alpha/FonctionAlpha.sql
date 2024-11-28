@@ -4,6 +4,7 @@ AS BEGIN
 	SET @STR = REPLACE(@STR, '–', '_')
 	SET @STR = REPLACE(@STR, '/', '_')
 	SET @STR = REPLACE(@STR, '@', '_')
+	SET @STR = REPLACE(@STR, '&', '_')
 
 RETURN @STR
 END;
